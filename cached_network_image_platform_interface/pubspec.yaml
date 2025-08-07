@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.4.1
+  flutter_cache_manager: #  ^3.4.1 等3.4.2看看有没有改变   pub.dev内的版本有此问题 https://github.com/Baseflow/flutter_cache_manager/issues/476
+    git:
+      url: https://github.com/Baseflow/flutter_cache_manager.git
+      ref: 54904e499a06d0364a2b3f4ca9789e5f829f1879
+      path: flutter_cache_manager # 指定仓库内子路径
 
 dev_dependencies:
   file: '>=7.0.0 <8.0.0'
