@@ -8,7 +8,10 @@ environment:
   flutter: '>=3.10.0'
 
 dependencies:
-  cached_network_image_platform_interface: ^4.1.1
+  cached_network_image_platform_interface: 
+    git: 
+      url: git@github.com:syt2/flutter_cached_network_image.git
+      path: cached_network_image_platform_interface
   flutter:
     sdk: flutter
   flutter_cache_manager: #  ^3.4.1 等3.4.2看看有没有改变   pub.dev内的版本有此问题 https://github.com/Baseflow/flutter_cache_manager/issues/476
